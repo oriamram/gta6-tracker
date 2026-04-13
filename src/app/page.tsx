@@ -64,7 +64,7 @@ export default function Home() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(255,107,74,0.08)_0%,transparent_60%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,rgba(180,80,255,0.05)_0%,transparent_50%)]" />
 
-      <div className="relative z-10 h-screen flex flex-col px-4 sm:px-8 lg:px-16 py-4 sm:py-6">
+      <div className="relative z-10 min-h-screen lg:h-screen flex flex-col px-4 sm:px-8 lg:px-16 py-4 sm:py-6">
         {/* Header */}
         <header className="flex items-center justify-between shrink-0">
           <span className="text-xl sm:text-2xl font-black tracking-wider text-white/90">VI</span>
@@ -88,10 +88,10 @@ export default function Home() {
           {/* Left: Hero section */}
           <div className="flex flex-col justify-center min-h-0 items-center lg:items-start text-center lg:text-left">
             {/* Title */}
-            <h1 className="text-lg sm:text-xl font-light tracking-[0.15em] text-white/60 uppercase">
+            <h1 className="text-xl sm:text-xl font-light tracking-[0.15em] text-white/60 uppercase">
               {data.developer}
             </h1>
-            <h2 className="text-3xl sm:text-5xl lg:text-7xl font-black uppercase leading-[0.95] mt-1 sm:mt-2 glow-text text-transparent bg-clip-text bg-gradient-to-b from-[#ff6b4a] via-[#ff8c5a] to-[#ffb347]">
+            <h2 className="text-5xl sm:text-5xl lg:text-7xl font-black uppercase leading-[0.95] mt-2 sm:mt-2 glow-text text-transparent bg-clip-text bg-gradient-to-b from-[#ff6b4a] via-[#ff8c5a] to-[#ffb347]">
               Grand Theft
               <br />
               Auto VI
@@ -99,10 +99,10 @@ export default function Home() {
 
             {/* Release date */}
             <div className="mt-4 sm:mt-6">
-              <p className="text-[10px] sm:text-xs tracking-[0.3em] text-white/40 uppercase mb-1">
+              <p className="text-xs sm:text-xs tracking-[0.3em] text-white/40 uppercase mb-1">
                 Release Date
               </p>
-              <p className="text-xl sm:text-3xl lg:text-4xl font-black text-white">
+              <p className="text-3xl sm:text-3xl lg:text-4xl font-black text-white">
                 {currentDate.date}
               </p>
               <div className="flex items-center gap-3 mt-1.5 justify-center lg:justify-start">

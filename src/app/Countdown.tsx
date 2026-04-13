@@ -33,10 +33,10 @@ export default function Countdown({ targetDate }: { targetDate: string }) {
     <div className="flex gap-3 sm:gap-5">
       {units.map((u) => (
         <div key={u.label} className="flex flex-col items-center">
-          <span className="text-3xl sm:text-5xl lg:text-6xl font-black tabular-nums tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-[#ff6b4a] to-[#ffb347]">
+          <span className="text-5xl sm:text-5xl lg:text-6xl font-black tabular-nums tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-[#ff6b4a] to-[#ffb347]">
             {String(u.value).padStart(2, "0")}
           </span>
-          <span className="text-[10px] sm:text-xs tracking-[0.3em] text-white/50 mt-1">
+          <span className="text-xs sm:text-xs tracking-[0.3em] text-white/50 mt-1">
             {u.label}
           </span>
         </div>
