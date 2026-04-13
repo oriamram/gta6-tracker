@@ -6,7 +6,10 @@ const WEBHOOK_URL =
   "https://oriamram.app.n8n.cloud/webhook/5ca654b3-c5c6-4bd0-835d-c8ff441b21b0";
 
 const ONE_DAY_MS = 24 * 60 * 60 * 1000;
-const CACHE_FILE = path.join(process.cwd(), "cache.json");
+const CACHE_FILE = path.join(
+  process.env.VERCEL ? "/tmp" : process.cwd(),
+  "cache.json"
+);
 
 interface CacheFile {
   fetchedAt: number;
