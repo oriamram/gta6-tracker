@@ -60,6 +60,8 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-[#0c0c0e] relative overflow-hidden">
+      {/* Background image */}
+      <div className="absolute inset-0 bg-[url('/bg.jpg')] bg-cover bg-center bg-no-repeat opacity-5" />
       {/* Subtle background gradient */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(255,107,74,0.08)_0%,transparent_60%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,rgba(180,80,255,0.05)_0%,transparent_50%)]" />
